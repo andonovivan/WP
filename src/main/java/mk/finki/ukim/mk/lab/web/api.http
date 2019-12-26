@@ -1,0 +1,37 @@
+GET http://localhost:8080/ingredients
+
+###
+POST http://localhost:8080/ingredients?name=testIngredient2&spicy=false&amount=5
+
+###
+PATCH http://localhost:8080/ingredients/1?name=test1Ingredient&spicy=true&amount=2
+
+###
+DELETE http://localhost:8080/ingredients/1
+
+###
+GET http://localhost:8080/ingredients/spicy
+
+###
+GET http://localhost:8080/ingredients/2/pizzas
+
+###
+
+GET http://localhost:8080/pizzas
+
+###
+POST http://localhost:8080/pizzas?name=pizza1&description=This_is_pizza1&ingredient=testIngredient1
+
+###
+PUT http://localhost:8080/pizzas/1?name=pizza55&description=This_is_pizza55&ingredient=testIngredient2
+
+###
+DELETE http://localhost:8080/pizzas/1
+
+###
+GET http://localhost:8080/pizzas/1
+
+###
+GET http://localhost:8080/pizzas?totalIngredients=100
+
+###
